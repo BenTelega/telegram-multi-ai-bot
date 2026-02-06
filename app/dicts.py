@@ -2,22 +2,25 @@ from app.models.xai import model_xai
 from app.models.llama import model_llama
 from app.models.deepseek import model_deepseek
 from app.models.anthropic import model_anthropic
+from app.models.qwen import model_qwen
 
-# ---- Маппинг “имя модели” -> корутина генерации
+# ---- Маппинг "имя модели" -> корутина генерации
 MODEL_CALLS = {
     "xai": model_xai,
     "llama": model_llama,
-#    "gemini": model_gemini,
+    #    "gemini": model_gemini,
     "deepseek": model_deepseek,
-    "anthropic": model_anthropic,  
+    "anthropic": model_anthropic,
+    "qwen": model_qwen,
 }
 
 # Человеко-читаемые названия/алиасы для подстановки в интро
 MODEL_TITLES = {
-    "deepseek":  ("DeepSeek-V3", "DeepSeek Chat"),
-    "llama":     ("Meta Llama 3.1-70B", "Llama"),
+    "deepseek": ("DeepSeek-V3", "DeepSeek Chat"),
+    "llama": ("Meta Llama 3.1-70B", "Llama"),
     "anthropic": ("Claude-3.5 Sonnet", "Claude"),
-    "xai":       ("Grok-2", "Grok"),
+    "xai": ("Grok-2", "Grok"),
+    "qwen": ("Qwen3 Coder", "Qwen"),
 }
 
 # Шаблон запроса для самопрезентации
