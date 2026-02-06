@@ -5,7 +5,7 @@
 ![OpenRouter](https://img.shields.io/badge/OpenRouter-API-success)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow)
 
-Multi-AI Telegram Bot — хаб ИИ-ассистентов в Telegram с выбором модели через OpenRouter API. Поддерживает Llama и Claude. Каждая модель имеет собственное приветствие и позиционирование.
+Multi-AI Telegram Bot — хаб ИИ-ассистентов в Telegram с выбором модели через OpenRouter API. Поддерживает Llama, Claude и Mistral. Каждая модель имеет собственное приветствие и позиционирование.
 
 ## Ключевые возможности
 
@@ -55,7 +55,8 @@ python main.py
 app/
 ├── models/          # Интеграции с AI-провайдерами
 │   ├── llama.py
-│   └── anthropic.py
+│   ├── anthropic.py
+│   └── mistral.py
 ├── handlers.py      # Telegram-обработчики и FSM
 ├── keyboards.py     # Inline-клавиатуры
 ├── states.py        # FSM-состояния
