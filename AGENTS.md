@@ -1,7 +1,7 @@
 # AGENTS.md - Guidelines for AI Coding Agents
 
 ## Project Overview
-Multi-AI Telegram Bot - A Python-based Telegram bot using aiogram v3 that integrates with multiple AI models (Llama, DeepSeek, Claude, Grok) via OpenRouter API.
+Multi-AI Telegram Bot - A Python-based Telegram bot using aiogram v3 that integrates with multiple AI models (Llama, Claude) via OpenRouter API.
 
 ## Build/Run Commands
 

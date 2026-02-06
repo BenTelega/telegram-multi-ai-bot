@@ -3,7 +3,7 @@ from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 
 async def ai_models():
-    models = ["anthropic", "llama", "deepseek", "xai", "qwen"]
+    models = ["anthropic", "llama"]
     keyboard = InlineKeyboardBuilder()
     for model in models:
         keyboard.add(InlineKeyboardButton(text=model, callback_data=f"model_{model}"))
